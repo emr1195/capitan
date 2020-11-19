@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Capitan America</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/captain-america-super-soldier-playstation-3_55521_preview_rev_3.png" alt=""></a>
+        <div class="toggle"><img src="img/Crop_preview_rev_1.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>No soy fiel a nada excepto al sueño <span>americano</span></h2>
+            <p>No importa lo que suceda mañana, prométeme una sola cosa, que te quedarás donde estás. No como un soldado perfecto, sino como un buen hombre.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="img/play.png" alt="">Trailer</a>
+            <div class="slide"></div>
+                <ul class="sci">
+                    <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="trailer.mp4" controls="true"></video>
+        <img src="img/close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+      function toggle(){
+          var trailer = document.querySelector('.trailer');
+          var video = document.querySelector('video');
+          trailer.classList.toggle('active')
+          video.currentTime = 0;
+          video.pause();
+      }
+    </script>
+</body>
+</html>
