@@ -31,7 +31,7 @@ header .toggle img{
     width: 100%;
     min-height: 100vh;
     padding: 0 100px;
-    background: url(img/background.jpg);
+    background-image: url(img/background.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -113,7 +113,7 @@ header .toggle img{
     left: calc(50% - 250px / 2);
     width: 250px;
     height: 150px;
-    background: url(img/1482.jpg);
+    background-image: url(img/1482.jpg);
     background-size: cover;
     cursor: pointer;
     animation: animate 25s linear infinite;
